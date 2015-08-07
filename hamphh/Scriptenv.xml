@@ -21,6 +21,11 @@
       <ContainerDir>/scripts</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+	<Volume>
+      <HostDir>/mnt/user/_logs</HostDir>
+      <ContainerDir>/logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
     <Volume>
       <HostDir>/mnt/usr</HostDir>
       <ContainerDir>/data</ContainerDir>
