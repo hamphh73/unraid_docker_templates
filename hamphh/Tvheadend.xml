@@ -3,15 +3,14 @@
   <Name>Tvheadend</Name>
   <Overview>Tvheadend Master-Branch passing throug 2 DVB Tuners (Transcoding und HDHomeRun disabled).</Overview>
   <Description>
-		Generates a Ramdisk in /timeshift
-		[b][span style=\'color: #E80000;\']Directions:[/span][/b][br]&#13;
+		Generates a Ramdisk in /timeshift[br][br]&#13;
 		[b]/config[/b] : This is where Tvheadend will store it\'s databases and configuration.[br][br]&#13;
 		[b]/recordings[/b] : This is where Tvheadend will store it\'s recordings. You will have to edit the path in the configuration tab to /recordings or else the volume mapping will not work.[br][br]&#13;
 		[b]/data[/b] : This is where the tv_grab_wg script will look for the guide.xml. This is only for use with WebGrab+Plus. Ignore if you do not use WebGrab+Plus for EPG data.[br][br]&#13;
   </Description>
   <Support></Support>
   <Registry>https://hub.docker.com/r/hamphh/tvheadend/</Registry>
-  <Repository>hamphh73/tvheadend</Repository>
+  <Repository>hamphh/tvheadend</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>
