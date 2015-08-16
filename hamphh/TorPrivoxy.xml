@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>TorPrivoxy</Name>
+  <Overview>Tor and Privoxy configured using Tor.</Overview>
+  <Description>Port 8118: http-Proxy<br>Port 9050: socks5-Proxy</Description>
+  <Support></Support>
+  <Registry>https://hub.docker.com/r/hamphh/tor_privoxy/</Registry>
+  <Repository>hamphh/tor_privoxy</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8118</HostPort>
+        <ContainerPort>8118</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9050</HostPort>
+        <ContainerPort>9050</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/tor/</HostDir>
+      <ContainerDir>/usr/local/etc/tor</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/privoxy/</HostDir>
+      <ContainerDir>/etc/privoxy</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/_logs/tor</HostDir>
+      <ContainerDir>/var/log/tor</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/_logs/privoxy</HostDir>
+      <ContainerDir>/var/log/privoxy</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>0.1</Version>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>http://i.imgur.com/kUdlmBy.jpg</Icon>
+  <Beta>False</Beta>
+  <Category>Network:Proxy</Category>
+  <ExtraParams></ExtraParams>
+</Container>
