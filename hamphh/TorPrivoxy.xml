@@ -32,7 +32,7 @@
     </Volume>
     <Volume>
       <HostDir>/mnt/cache/_dockerdata/privoxy/</HostDir>
-      <ContainerDir>/etc/privoxy</ContainerDir>
+      <ContainerDir>/usr/local/etc/privoxy</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
