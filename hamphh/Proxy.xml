@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>TorPrivoxy</Name>
+  <Name>Proxy</Name>
   <Overview>Tor and Privoxy configured using Tor.</Overview>
   <Description>Port 8118: http-Proxy[br]Port 9050: socks5-Proxy</Description>
   <Support></Support>
