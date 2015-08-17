@@ -2,7 +2,7 @@
 <Container>
   <Name>TorPrivoxy</Name>
   <Overview>Tor and Privoxy configured using Tor.</Overview>
-  <Description>Port 8118: http-Proxy<br>Port 9050: socks5-Proxy</Description>
+  <Description>Port 8118: http-Proxy[br]Port 9050: socks5-Proxy</Description>
   <Support></Support>
   <Registry>https://hub.docker.com/r/hamphh/tor_privoxy/</Registry>
   <Repository>hamphh/tor_privoxy</Repository>
