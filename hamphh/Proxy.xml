@@ -5,7 +5,7 @@
   <Description>Port 8118: http-Proxy[br]Port 9050: socks5-Proxy</Description>
   <Support></Support>
   <Registry>https://hub.docker.com/r/hamphh/proxy/</Registry>
-  <Repository>hamphh/tor_privoxy</Repository>
+  <Repository>hamphh/proxy</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>
