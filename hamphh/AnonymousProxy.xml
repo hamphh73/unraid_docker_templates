@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Anonymous Proxy</Name>
+  <Overview>Tor and Privoxy configured using Tor.</Overview>
+  <Description>Port 8119: http-Proxy[br]Port 9050: socks5-Proxy</Description>
+  <Support></Support>
+  <Registry>https://hub.docker.com/r/hamphh/anonymous_proxy/</Registry>
+  <Repository>hamphh/anonymous_proxy</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8119</HostPort>
+        <ContainerPort>8119</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9050</HostPort>
+        <ContainerPort>9050</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/anonymous_proxy/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/_logs/</HostDir>
+      <ContainerDir>/logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>0.1</Version>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>http://i.imgur.com/kUdlmBy.jpg</Icon>
+  <Beta>False</Beta>
+  <Category>Network:Proxy</Category>
+  <ExtraParams></ExtraParams>
+</Container>

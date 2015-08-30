@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
   <Name>Proxy</Name>
-  <Overview>Tor and Privoxy configured using Tor.</Overview>
-  <Description>Port 8118: http-Proxy[br]Port 9050: socks5-Proxy</Description>
+  <Overview>Privoxy</Overview>
+  <Description>Port 8118: http(s)-Proxy</Description>
   <Support></Support>
   <Registry>https://hub.docker.com/r/hamphh/proxy/</Registry>
   <Repository>hamphh/proxy</Repository>
@@ -17,29 +17,19 @@
         <ContainerPort>8118</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
-      <Port>
-        <HostPort>9050</HostPort>
-        <ContainerPort>9050</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
     </Publish>
   </Networking>
   <Data>
-    <Volume>
-      <HostDir>/mnt/cache/_dockerdata/proxy/</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
     <Volume>
       <HostDir>/mnt/cache/_logs/</HostDir>
       <ContainerDir>/logs</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Version>0.2</Version>
+  <Version>0.1</Version>
   <WebUI></WebUI>
   <Banner></Banner>
-  <Icon>http://i.imgur.com/kUdlmBy.jpg</Icon>
+  <Icon>http://i.imgur.com/FXpAH0L.png</Icon>
   <Beta>False</Beta>
   <Category>Network:Proxy</Category>
   <ExtraParams></ExtraParams>
