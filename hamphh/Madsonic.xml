@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Madsonic</Name>
+  <Overview>Madsonic 6</Overview>
+  <Description>Port 4040</Description>
+  <Support></Support>
+  <Registry>https://hub.docker.com/r/hamphh/madsonic/</Registry>
+  <Repository>hamphh/madsonic</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>4040</HostPort>
+        <ContainerPort>4040</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/madsonic/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Musik/</HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>0.1</Version>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>http://i.imgur.com/Rje4GMt.png</Icon>
+  <Beta>False</Beta>
+  <Category>MediaApp:Music</Category>
+  <ExtraParams></ExtraParams>
+</Container>
