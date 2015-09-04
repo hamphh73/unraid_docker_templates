@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Home Proxy</Name>
+  <Overview>Privoxy + Squid + DansGuardian</Overview>
+  <Description>Port 3128: Squid-Proxy[br]Port 8081: DansGuardian</Description>
+  <Support></Support>
+  <Registry>https://hub.docker.com/r/hamphh/home_proxy/</Registry>
+  <Repository>hamphh/home_proxy</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3128</HostPort>
+        <ContainerPort>3128</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8081</HostPort>
+        <ContainerPort>8081</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+   <Volume>
+      <HostDir>/mnt/cache/_dockerdata/home_proxy/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/_logs/</HostDir>
+      <ContainerDir>/logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>0.1</Version>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>http://i.imgur.com/nW6Kii2.png</Icon>
+  <Beta>False</Beta>
+  <Category>Network:Proxy</Category>
+  <ExtraParams></ExtraParams>
+</Container>
