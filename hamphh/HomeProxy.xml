@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
   <Name>Home Proxy</Name>
-  <Overview>Privoxy + Squid + DansGuardian</Overview>
-  <Description>Port 3128: Squid-Proxy[br]Port 8081: DansGuardian</Description>
+  <Overview>Privoxy + Squid + e2guardian</Overview>
+  <Description>Port 3128: Squid-Proxy[br]Port 8081: e2guardian</Description>
   <Support></Support>
   <Registry>https://hub.docker.com/r/hamphh/home_proxy/</Registry>
   <Repository>hamphh/home_proxy</Repository>
