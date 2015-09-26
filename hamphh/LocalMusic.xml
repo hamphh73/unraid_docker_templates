@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>LocalMusic</Name>
+  <Overview>Localize Music</Overview>
+  <Description>Edit init.sh, add SP App Key</Description>
+  <Support></Support>
+  <Registry>https://hub.docker.com/r/hamphh/local_music/</Registry>
+  <Repository>hamphh/local_music</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/local_music/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/_logs/</HostDir>
+      <ContainerDir>/logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>0.1</Version>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>http://i.imgur.com/N06jMF1.png</Icon>
+  <Beta>False</Beta>
+  <Category>Downloaders:</Category>
+  <ExtraParams></ExtraParams>
+</Container>
