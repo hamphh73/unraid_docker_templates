@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>Tvheadend</Name>
-  <Overview>Tvheadend Master-Branch passing throug 2 DVB Tuners (Transcoding und HDHomeRun disabled).</Overview>
+  <Name>Tvheadend 4.0</Name>
+  <Overview>Tvheadend 4.0.x passing throug 2 DVB Tuners (Transcoding und HDHomeRun disabled).</Overview>
   <Description>
 		Generates a Ramdisk in /timeshift[br][br]&#13;
 		[b]/config[/b] : This is where Tvheadend will store it\'s databases and configuration.[br][br]&#13;
@@ -9,8 +9,8 @@
 		[b]/data[/b] : This is where the tv_grab_wg script will look for the guide.xml. This is only for use with WebGrab+Plus. Ignore if you do not use WebGrab+Plus for EPG data.[br][br]&#13;
   </Description>
   <Support></Support>
-  <Registry>https://hub.docker.com/r/hamphh/tvheadend/</Registry>
-  <Repository>hamphh/tvheadend</Repository>
+  <Registry>https://hub.docker.com/r/hamphh/tvheadend40/</Registry>
+  <Repository>hamphh/tvheadend40</Repository>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Environment/>
@@ -36,7 +36,7 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/_dockerdata/tvheadend/</HostDir>
+      <HostDir>/mnt/cache/_dockerdata/tvheadend40/</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
