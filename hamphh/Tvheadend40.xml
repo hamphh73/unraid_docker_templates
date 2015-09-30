@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>Tvheadend 4.0</Name>
+  <Name>Tvheadend_4.0</Name>
   <Overview>Tvheadend 4.0.x passing throug 2 DVB Tuners (Transcoding und HDHomeRun disabled).</Overview>
   <Description>
 		Generates a Ramdisk in /timeshift[br][br]&#13;
