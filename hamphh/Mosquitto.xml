@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Mosquitto</Name>
+  <Overview>Mosquitto: An Open Source MQTT v3.1/v3.1.1 Broker</Overview>
+  <Description>
+		[b]Mosquitto:[/b] An Open Source MQTT v3.1/v3.1.1 Broker[br][br]&#13;
+  </Description>
+  <Support></Support>
+  <Registry>https://hub.docker.com/r/hamphh/mosquitto/</Registry>
+  <Repository>hamphh/mosquitto</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>1883</HostPort>
+        <ContainerPort>1883</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/mosquitto/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/_logs/</HostDir>
+      <ContainerDir>/logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>0.1</Version>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>http://i.imgur.com/wunlzcR.png</Icon>
+  <Beta>False</Beta>
+  <Category>Other:</Category>
+  <ExtraParams></ExtraParams>
+</Container>
