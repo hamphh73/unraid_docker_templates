@@ -16,6 +16,10 @@
       <Name>REST_TRANSPORT_URI</Name>
       <Value>http://&lt;Host-IP&gt;:12900/</Value>
     </Variable>
+	<Variable>
+      <Name>LOGSTASH_TRACE</Name>
+      <Value></Value>
+    </Variable>
   </Environment>
   <Networking>
     <Mode>bridge</Mode>
