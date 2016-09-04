@@ -36,7 +36,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/_dockerdata/homeautomation/</HostDir>
+      <HostDir>/mnt/cache/_dockerdata/homeautomation2/</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
