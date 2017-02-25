@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Lighttpd</Name>
+  <Overview>Lighttpd Webserver</Overview>
+  <Description>
+		Lighttpd Webserver
+  </Description>
+  <Support></Support>
+  <Registry>https://hub.docker.com/r/hamphh/lighttpd/</Registry>
+  <Repository>hamphh/lighttpd</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>80</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/lighttpd/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/_logs/</HostDir>
+      <ContainerDir>/logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>0.1</Version>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <Banner></Banner>
+  <Icon>http://i.imgur.com/mIZEzXz.png</Icon>
+  <Beta>False</Beta>
+  <Category>Network:Web</Category>
+</Container>
