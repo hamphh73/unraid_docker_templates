@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Splunk</Name>
+  <Overview>Splunk Light</Overview>
+  <Description>
+		Splunk Light
+  </Description>
+  <Support></Support>
+  <Registry>https://hub.docker.com/r/hamphh/splunk/</Registry>
+  <Repository>hamphh/splunk</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8000</HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/splunk/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/_logs/</HostDir>
+      <ContainerDir>/logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>0.1</Version>
+  <Banner></Banner>
+  <Icon>http://i.imgur.com/uLuSxFR.png</Icon>
+  <Beta>False</Beta>
+  <Category></Category>
+  <ExtraParams></ExtraParams>
+</Container>
