@@ -7,7 +7,7 @@
   </Description>
   <Support></Support>
   <Registry>https://hub.docker.com/r/hamphh/unraidjavabase/</Registry>
-  <Repository>hamphh/homealert</Repository>
+  <Repository>hamphh/unraidjavabase</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
