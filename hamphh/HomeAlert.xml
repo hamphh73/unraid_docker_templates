@@ -14,8 +14,8 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>25</HostPort>
-        <ContainerPort>25</ContainerPort>
+        <HostPort>2025</HostPort>
+        <ContainerPort>2025</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
