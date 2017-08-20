@@ -6,8 +6,8 @@
 		Home Alert
   </Description>
   <Support></Support>
-  <Registry>http://devenv:5555</Registry>
-  <Repository>devenv:5555/unraid_docker/unraidjavabase</Repository>
+  <Registry></Registry>
+  <Repository>hamphh/unraidjavabase</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>

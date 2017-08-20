@@ -6,7 +6,7 @@
 		Ubuntu Server
   </Description>
   <Support></Support>
-  <Registry>https://hub.docker.com/r/hamphh/ubuntu/</Registry>
+  <Registry></Registry>
   <Repository>hamphh/ubuntu</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>

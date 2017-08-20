@@ -4,7 +4,7 @@
   <Overview>Tor and Privoxy configured using Tor.</Overview>
   <Description>Port 8119: http-Proxy[br]Port 9050: socks5-Proxy</Description>
   <Support></Support>
-  <Registry>https://hub.docker.com/r/hamphh/anonymous_proxy/</Registry>
+  <Registry></Registry>
   <Repository>hamphh/anonymous_proxy</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>

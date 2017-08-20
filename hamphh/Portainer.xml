@@ -6,7 +6,7 @@
 		Docker Management UI
   </Description>
   <Support></Support>
-  <Registry>https://hub.docker.com/r/portainer/portainer/</Registry>
+  <Registry></Registry>
   <Repository>portainer/portainer</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>

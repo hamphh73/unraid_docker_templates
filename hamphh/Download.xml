@@ -4,7 +4,7 @@
   <Overview>deluge, Couchpotato and pyload</Overview>
   <Description>Port 8112: deluge[br]Port 5050: Couchpotato[br]Port 8000: pyload[br][br]User/Password always 'download'</Description>
   <Support></Support>
-  <Registry>https://hub.docker.com/r/hamphh/download/</Registry>
+  <Registry></Registry>
   <Repository>hamphh/download</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>

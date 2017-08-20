@@ -6,7 +6,7 @@
 		[b]Mosquitto:[/b] An Open Source MQTT v3.1/v3.1.1 Broker[br][br]&#13;
   </Description>
   <Support></Support>
-  <Registry>https://hub.docker.com/r/hamphh/mosquitto/</Registry>
+  <Registry></Registry>
   <Repository>hamphh/mosquitto</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>

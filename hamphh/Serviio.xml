@@ -5,7 +5,7 @@
   <Description>
   </Description>
   <Support></Support>
-  <Registry>https://hub.docker.com/r/hamphh/serviio/</Registry>
+  <Registry></Registry>
   <Repository>hamphh/serviio</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>

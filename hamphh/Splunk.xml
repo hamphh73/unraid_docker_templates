@@ -6,7 +6,7 @@
 		Splunk Light
   </Description>
   <Support></Support>
-  <Registry>https://hub.docker.com/r/hamphh/splunk/</Registry>
+  <Registry></Registry>
   <Repository>hamphh/splunk</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>

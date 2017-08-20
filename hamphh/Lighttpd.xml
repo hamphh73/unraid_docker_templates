@@ -6,7 +6,7 @@
 		Lighttpd Webserver
   </Description>
   <Support></Support>
-  <Registry>https://hub.docker.com/r/hamphh/lighttpd/</Registry>
+  <Registry></Registry>
   <Repository>hamphh/lighttpd</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>

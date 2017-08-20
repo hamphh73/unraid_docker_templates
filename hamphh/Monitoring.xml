@@ -6,7 +6,7 @@
 	InfluxDB and Grafana
   </Description>
   <Support></Support>
-  <Registry>https://hub.docker.com/r/hamphh/monitoring/</Registry>
+  <Registry></Registry>
   <Repository>hamphh/monitoring</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>

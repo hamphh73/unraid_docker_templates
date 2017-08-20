@@ -6,7 +6,7 @@
   </Description>
 	Nextcloud
   <Support></Support>
-  <Registry>https://hub.docker.com/r/hamphh/nextcloud/</Registry>
+  <Registry></Registry>
   <Repository>hamphh/nextcloud</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>Homeautomation</Name>
+  <Name>Homeautomation2</Name>
   <Overview>Homegear and openHab.</Overview>
   <Description>openHab on port 8080</Description>
   <Support></Support>
-  <Registry>https://hub.docker.com/r/hamphh/homeautomation/</Registry>
+  <Registry></Registry>
   <Repository>hamphh/homeautomation</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
@@ -36,7 +36,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/_dockerdata/homeautomation/</HostDir>
+      <HostDir>/mnt/cache/_dockerdata/homeautomation2/</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>

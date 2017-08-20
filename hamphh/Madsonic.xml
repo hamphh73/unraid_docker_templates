@@ -4,7 +4,7 @@
   <Overview>Madsonic 6</Overview>
   <Description>Port 4040</Description>
   <Support></Support>
-  <Registry>https://hub.docker.com/r/hamphh/madsonic/</Registry>
+  <Registry></Registry>
   <Repository>hamphh/madsonic</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>

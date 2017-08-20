@@ -6,7 +6,7 @@
 		[b]Fill in root password in environment![/b]
   </Description>
   <Support></Support>
-  <Registry>https://hub.docker.com/r/hamphh/mariadb/</Registry>
+  <Registry></Registry>
   <Repository>hamphh/mariadb</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>

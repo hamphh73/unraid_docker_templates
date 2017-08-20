@@ -7,7 +7,7 @@
 	set ENV REST_TRANSPORT_URI with http://&lt;Host-IP&gt;:12900/
   </Description>
   <Support></Support>
-  <Registry>https://hub.docker.com/r/hamphh/graylog/</Registry>
+  <Registry>/</Registry>
   <Repository>hamphh/graylog</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>

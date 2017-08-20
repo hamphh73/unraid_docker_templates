@@ -5,7 +5,7 @@
   <Description>
   </Description>
   <Support></Support>
-  <Registry>https://hub.docker.com/r/hamphh/scriptenv/</Registry>
+  <Registry></Registry>
   <Repository>hamphh/scriptenv</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>

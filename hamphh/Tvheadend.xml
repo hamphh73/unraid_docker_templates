@@ -8,7 +8,7 @@
 		[b]/data[/b] : This is where the tv_grab_wg script will look for the guide.xml. This is only for use with WebGrab+Plus. Ignore if you do not use WebGrab+Plus for EPG data.[br][br]&#13;
   </Description>
   <Support></Support>
-  <Registry>https://hub.docker.com/r/hamphh/tvheadend/</Registry>
+  <Registry></Registry>
   <Repository>hamphh/tvheadend</Repository>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>

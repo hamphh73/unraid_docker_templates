@@ -4,7 +4,7 @@
   <Overview>Privoxy + Squid + e2guardian</Overview>
   <Description>Port 3128: Squid-Proxy[br]Port 8081: e2guardian</Description>
   <Support></Support>
-  <Registry>https://hub.docker.com/r/hamphh/home_proxy/</Registry>
+  <Registry></Registry>
   <Repository>hamphh/home_proxy</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
