@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>Homeautomation2</Name>
+  <Name>Homeautomation</Name>
   <Overview>Homegear and openHab.</Overview>
   <Description>openHab on port 8080</Description>
   <Support></Support>
@@ -36,7 +36,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/_dockerdata/homeautomation2/</HostDir>
+      <HostDir>/mnt/cache/_dockerdata/homeautomation/</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
