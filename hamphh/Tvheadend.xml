@@ -44,6 +44,11 @@
       <ContainerDir>/recordings</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir>/mnt/user/TV-Timeshift/</HostDir>
+      <ContainerDir>/timeshift</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <Version>0.1</Version>
   <WebUI>http://[IP]:[PORT:9981]/extjs.html?</WebUI>
