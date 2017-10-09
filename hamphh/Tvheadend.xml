@@ -45,7 +45,7 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/TV-Timeshift/</HostDir>
+      <HostDir>/mnt/disks/tvtimeshift/</HostDir>
       <ContainerDir>/timeshift</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
