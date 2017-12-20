@@ -9,7 +9,7 @@
   <Registry></Registry>
   <Repository>portainer/portainer</Repository>
   <BindTime>true</BindTime>
-  <Privileged>false</Privileged>
+  <Privileged>true</Privileged>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -24,6 +24,13 @@
     <Volume>
       <HostDir>/var/run/docker.sock</HostDir>
       <ContainerDir>/var/run/docker.sock</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/portainer/</HostDir>
+      <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
