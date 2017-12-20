@@ -28,6 +28,11 @@
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
+        <HostPort>5007</HostPort>
+        <ContainerPort>5007</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
         <HostPort>8080</HostPort>
         <ContainerPort>8080</ContainerPort>
         <Protocol>tcp</Protocol>
