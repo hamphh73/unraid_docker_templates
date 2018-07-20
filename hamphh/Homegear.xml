@@ -53,5 +53,5 @@
   <Beta>False</Beta>
   <Category>HomeAutomation:</Category>
   <Config Name="HOST_USER_ID" Target="HOST_USER_ID" Default="99" Mode="" Description="User: nobody" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="HOST_USER_GID" Target="HOST_USER_ID" Default="100" Mode="" Description="Group: users" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="HOST_USER_GID" Target="HOST_USER_GID" Default="100" Mode="" Description="Group: users" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
