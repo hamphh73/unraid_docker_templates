@@ -7,7 +7,7 @@
   <Registry></Registry>
   <Repository>homegear/homegear:stable</Repository>
   <BindTime>true</BindTime>
-  <Privileged>false</Privileged>
+  <Privileged>true</Privileged>
   <Environment/>
   <Networking>
     <Mode>bridge</Mode>
@@ -33,24 +33,25 @@
     <Volume>
       <HostDir>/mnt/cache/_dockerdata/homegear/etc</HostDir>
       <ContainerDir>/etc/homegear</ContainerDir>
-      <Mode>Z</Mode>
+      <Mode>rw</Mode>
     </Volume>
     <Volume>
       <HostDir>/mnt/cache/_dockerdata/homegear/lib</HostDir>
       <ContainerDir>/var/lib/homegear</ContainerDir>
-      <Mode>Z</Mode>
+      <Mode>rw</Mode>
     </Volume>
     <Volume>
       <HostDir>/mnt/cache/_logs/homegear</HostDir>
       <ContainerDir>/var/log/homegear</ContainerDir>
-      <Mode>Z</Mode>
+      <Mode>rw</Mode>
     </Volume>
   </Data>
   <Version>0.1</Version>
   <WebUI></WebUI>
   <Banner></Banner>
-  <Icon>http://i.imgur.com/4YjuESp.png</Icon>
+  <Icon>http://i.imgur.com/VhtqKLa.png</Icon>
   <Beta>False</Beta>
   <Category>HomeAutomation:</Category>
-  <ExtraParams>-e HOST_USER_ID=$(id -u) -e HOST_USER_GID=$(id -g)</ExtraParams>
+  <Config Name="HOST_USER_ID" Target="HOST_USER_ID" Default="99" Mode="" Description="User: nobody" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="HOST_USER_GID" Target="HOST_USER_ID" Default="100" Mode="" Description="Group: users" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
