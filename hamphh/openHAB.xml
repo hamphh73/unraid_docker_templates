@@ -5,7 +5,7 @@
   <Description>openHAB on port 8080</Description>
   <Support></Support>
   <Registry></Registry>
-  <Repository>hamphh/homeautomation</Repository>
+  <Repository>hamphh/openhab</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>
