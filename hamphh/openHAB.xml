@@ -5,12 +5,12 @@
   <Description>openHAB on port 8080</Description>
   <Support></Support>
   <Registry></Registry>
-  <Repository>hamphh/openhab</Repository>
+  <Repository>openhab/openhab:2.3.0-amd64-debian</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>
   <Networking>
-    <Mode>bridge</Mode>
+    <Mode>host</Mode>
     <Publish>
       <Port>
         <HostPort>5007</HostPort>
@@ -26,13 +26,18 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/_dockerdata/openhab/</HostDir>
-      <ContainerDir>/data</ContainerDir>
+      <HostDir>/mnt/cache/_dockerdata/openhab/addons</HostDir>
+      <ContainerDir>/opt/openhab/addons</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/_logs/</HostDir>
-      <ContainerDir>/logs</ContainerDir>
+      <HostDir>/mnt/cache/_dockerdata/openhab/conf</HostDir>
+      <ContainerDir>/opt/openhab/conf</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/openhab/userdata</HostDir>
+      <ContainerDir>/opt/openhab/userdata</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
@@ -42,5 +47,6 @@
   <Icon>http://i.imgur.com/4YjuESp.png</Icon>
   <Beta>False</Beta>
   <Category>HomeAutomation:</Category>
-  <ExtraParams></ExtraParams>
+  <Config Name="USER_ID" Target="USER_ID" Default="99" Mode="" Description="User: nobody" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="GROUP_ID" Target="GROUP_ID" Default="100" Mode="" Description="Group: users" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
