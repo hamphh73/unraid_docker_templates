@@ -27,17 +27,17 @@
   <Data>
     <Volume>
       <HostDir>/mnt/cache/_dockerdata/openhab/addons</HostDir>
-      <ContainerDir>/opt/openhab/addons</ContainerDir>
+      <ContainerDir>/openhab/addons</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
       <HostDir>/mnt/cache/_dockerdata/openhab/conf</HostDir>
-      <ContainerDir>/opt/openhab/conf</ContainerDir>
+      <ContainerDir>/openhab/conf</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
       <HostDir>/mnt/cache/_dockerdata/openhab/userdata</HostDir>
-      <ContainerDir>/opt/openhab/userdata</ContainerDir>
+      <ContainerDir>/openhab/userdata</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
@@ -47,6 +47,4 @@
   <Icon>http://i.imgur.com/4YjuESp.png</Icon>
   <Beta>False</Beta>
   <Category>HomeAutomation:</Category>
-  <Config Name="USER_ID" Target="USER_ID" Default="99" Mode="" Description="User: nobody" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="GROUP_ID" Target="GROUP_ID" Default="100" Mode="" Description="Group: users" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
