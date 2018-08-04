@@ -40,6 +40,11 @@
       <ContainerDir>/openhab/userdata</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/_logs/openhab</HostDir>
+      <ContainerDir>/openhab/userdata/logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <Version>0.1</Version>
   <WebUI></WebUI>
