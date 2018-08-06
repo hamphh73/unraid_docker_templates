@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Grafana</Name>
+  <Overview></Overview>
+  <Description>openHAB on port 3000</Description>
+  <Support></Support>
+  <Registry></Registry>
+  <Repository>grafana/grafana</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3000</HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/grafana</HostDir>
+      <ContainerDir>/var/lib/grafana</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>0.1</Version>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>http://i.imgur.com/iZhc5Ix.png</Icon>
+  <Beta>False</Beta>
+  <Config Name="GF_SECURITY_ADMIN_PASSWORD" Target="GF_SECURITY_ADMIN_PASSWORD" Default="" Mode="" Description="Adminpassword" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <ExtraParams>--user 99</ExtraParams>
+</Container>
