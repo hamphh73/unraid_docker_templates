@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
   <Name>Nextcloud</Name>
-  <Overview>Nextcloud with apache2/php7</Overview>
+  <Overview>Nextcloud auf Port 8888</Overview>
   <Description>
   </Description>
 	Nextcloud
   <Support></Support>
   <Registry></Registry>
-  <Repository>hamphh/nextcloud</Repository>
+  <Repository>nextcloud:latest</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
@@ -23,12 +23,12 @@
   <Data>
     <Volume>
       <HostDir>/mnt/cache/_dockerdata/nextcloud/</HostDir>
-      <ContainerDir>/data</ContainerDir>
+      <ContainerDir>/var/www/html</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/_logs/</HostDir>
-      <ContainerDir>/logs</ContainerDir>
+      <HostDir>/mnt/cache/_logs/nextcloud.log</HostDir>
+      <ContainerDir>/var/www/html/data/nextcloud.log</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>

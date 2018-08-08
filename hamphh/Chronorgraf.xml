@@ -27,7 +27,7 @@
     </Volume>
   </Data>
   <Version>0.1</Version>
-  <WebUI></WebUI>
+  <WebUI>http://[IP]:[PORT:8889]</WebUI>
   <Banner></Banner>
   <Icon>http://i.imgur.com/mUaPYsf.png</Icon>
   <Beta>False</Beta>
