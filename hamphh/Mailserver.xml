@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Mailserver</Name>
+  <Overview>Mailserver mit postfix und dovecot</Overview>
+  <Description>
+  User/Mailadress: notify@kellerserver.home
+  </Description>
+  <Support></Support>
+  <Registry></Registry>
+  <Repository>hamphh/mailserver</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>25</HostPort>
+        <ContainerPort>25</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>143</HostPort>
+        <ContainerPort>143</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+  </Data>
+  <Version>0.1</Version>
+  <WebUI>http://[IP]:[PORT:xxx]</WebUI>
+  <Banner></Banner>
+  <Icon>http://i.imgur.com/CQqspX7.png</Icon>
+  <Beta>False</Beta>
+  <Category></Category>
+  <ExtraParams></ExtraParams>
+</Container>
