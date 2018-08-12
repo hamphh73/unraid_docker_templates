@@ -12,7 +12,7 @@
   <Privileged>false</Privileged>
   <Environment/>
   <Networking>
-    <Mode>bridge</Mode>
+    <Mode>host</Mode>
     <Publish>
       <Port>
         <HostPort>25</HostPort>
@@ -27,6 +27,21 @@
     </Publish>
   </Networking>
   <Data>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/mailserver/etc/postfix</HostDir>
+      <ContainerDir>/etc/postfix</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/mailserver/etc/dovecot</HostDir>
+      <ContainerDir>/etc/dovcot</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/mailserver/scripts</HostDir>
+      <ContainerDir>/opt/scripts</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <Version>0.1</Version>
   <WebUI>http://[IP]:[PORT:xxx]</WebUI>
