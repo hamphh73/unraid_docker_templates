@@ -38,6 +38,11 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
+      <HostDir>/mnt/cache/_dockerdata/mailserver/mailboxes</HostDir>
+      <ContainerDir>/var/vmail</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
       <HostDir>/mnt/cache/_dockerdata/mailserver/scripts</HostDir>
       <ContainerDir>/opt/scripts</ContainerDir>
       <Mode>rw</Mode>
