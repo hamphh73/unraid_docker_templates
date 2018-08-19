@@ -34,7 +34,7 @@
     </Volume>
     <Volume>
       <HostDir>/mnt/cache/_dockerdata/mailserver/etc/dovecot</HostDir>
-      <ContainerDir>/etc/dovcot</ContainerDir>
+      <ContainerDir>/etc/dovecot</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
