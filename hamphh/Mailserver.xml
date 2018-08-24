@@ -38,6 +38,11 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
+      <HostDir>/mnt/cache/_dockerdata/mailserver/ssl</HostDir>
+      <ContainerDir>/etc/dovecot/private</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
       <HostDir>/mnt/cache/_logs/</HostDir>
       <ContainerDir>/logs</ContainerDir>
       <Mode>rw</Mode>
