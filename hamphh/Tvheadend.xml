@@ -30,8 +30,8 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/_dockerdata/epg/</HostDir>
-      <ContainerDir>/data</ContainerDir>
+      <HostDir>/mnt/cache/_dockerdata/epggrabber/</HostDir>
+      <ContainerDir>/epg</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
