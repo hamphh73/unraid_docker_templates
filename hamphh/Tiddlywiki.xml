@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Tiddlywiki</Name>
+  <Overview>Wiki</Overview>
+  <Description></Description>
+  <Support></Support>
+  <Registry></Registry>
+  <Repository>hamphh/tiddlywiki</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8081</HostPort>
+        <ContainerPort>8081</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/tiddlywiki</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>0.1</Version>
+  <WebUI>http://[IP]:[PORT:8081]</WebUI>
+  <Banner></Banner>
+  <Icon>http://i.imgur.com/A8hATXW.png</Icon>
+  <Beta>False</Beta>
+  <Category></Category>
+  <ExtraParams></ExtraParams>
+</Container>
