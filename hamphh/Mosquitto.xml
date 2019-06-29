@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>Mosquito</Name>
+  <Name>Mosquitto</Name>
   <Overview></Overview>
   <Description></Description>
   <Support></Support>
@@ -30,11 +30,16 @@
       <ContainerDir>/mosquitto</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/_logs</HostDir>
+      <ContainerDir>/log</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <Version>0.1</Version>
   <WebUI></WebUI>
   <Banner></Banner>
   <Icon>https://i.imgur.com/09f6pMT.png</Icon>
   <Beta>False</Beta>
-  <ExtraParams>--user 99</ExtraParams>
+  <ExtraParams></ExtraParams>
 </Container>
