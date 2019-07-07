@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>LogicalDOC</Name>
+  <Overview></Overview>
+  <Description></Description>
+  <Support></Support>
+  <Registry></Registry>
+  <Repository>logicaldoc/logicaldoc-ce</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8083</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/logicaldoc/conf</HostDir>
+      <ContainerDir>/opt/logicaldoc/conf</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/logicaldoc/repo</HostDir>
+      <ContainerDir>/opt/logicaldoc/repository</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>0.1</Version>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>https://i.imgur.com/R89EQHE.png</Icon>
+  <Beta>False</Beta>
+  <Config Name="DB_HOST" Target="DB_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB_PORT" Target="DB_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
+</Container>

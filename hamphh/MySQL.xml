@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>MySQL</Name>
+  <Overview></Overview>
+  <Description></Description>
+  <Support></Support>
+  <Registry></Registry>
+  <Repository>mysql:latest</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3306</HostPort>
+        <ContainerPort>3306</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/mysql</HostDir>
+      <ContainerDir>/var/lib/mysql</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>0.1</Version>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>https://i.imgur.com/QtvWPFf.png</Icon>
+  <Beta>False</Beta>
+  <Config Name="MYSQL_ROOT_PASSWORD" Target="MYSQL_ROOT_PASSWORD" Default="" Mode="" Description="Adminpassword" Type="Variable" Display="always" Required="true" Mask="true"/>
+</Container>

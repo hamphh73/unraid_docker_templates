@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>MySQL</Name>
+  <Overview></Overview>
+  <Description></Description>
+  <Support></Support>
+  <Registry></Registry>
+  <Repository>adminer:latest</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8082</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data></Data>
+  <Version>0.1</Version>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>https://i.imgur.com/PtibHVd.png</Icon>
+  <Beta>False</Beta>
+</Container>
