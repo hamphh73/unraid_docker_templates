@@ -5,7 +5,7 @@
   <Description>openHAB on port 8080</Description>
   <Support></Support>
   <Registry></Registry>
-  <Repository>openhab/openhab:2.3.0-amd64-debian</Repository>
+  <Repository>openhab/openhab:2.5.0-amd64-debian</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>

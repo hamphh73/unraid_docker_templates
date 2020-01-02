@@ -14,7 +14,7 @@
     <Publish>
       <Port>
         <HostPort>8890</HostPort>
-        <ContainerPort>80</ContainerPort>
+        <ContainerPort>8890</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
@@ -41,4 +41,5 @@
   <Banner></Banner>
   <Icon>https://i.imgur.com/HTmKhnN.png</Icon>
   <Beta>False</Beta>
+  <Config Name="GITLAB_OMNIBUS_CONFIG" Target="GITLAB_OMNIBUS_CONFIG" Default="external_url 'http://kellerserver:8890/';" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
