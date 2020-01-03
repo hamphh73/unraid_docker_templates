@@ -29,7 +29,7 @@
   <Version>0.1</Version>
   <WebUI>http://[IP]:[PORT:8889]</WebUI>
   <Banner></Banner>
-  <Icon>http://i.imgur.com/mUaPYsf.png</Icon>
+  <Icon>https://i.imgur.com/mUaPYsf.png</Icon>
   <Beta>False</Beta>
   <ExtraParams>--user 99</ExtraParams>
 </Container>

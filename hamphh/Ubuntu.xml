@@ -34,7 +34,7 @@
   </Data>
   <Version>0.1</Version>
   <Banner></Banner>
-  <Icon>http://i.imgur.com/5dcfgTt.png</Icon>
+  <Icon>https://i.imgur.com/5dcfgTt.png</Icon>
   <Beta>False</Beta>
   <Category></Category>
   <ExtraParams>--rm</ExtraParams>

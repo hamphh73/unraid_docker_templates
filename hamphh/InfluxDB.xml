@@ -29,7 +29,7 @@
   <Version>0.1</Version>
   <WebUI></WebUI>
   <Banner></Banner>
-  <Icon>http://i.imgur.com/krEmkeM.png</Icon>
+  <Icon>https://i.imgur.com/krEmkeM.png</Icon>
   <Beta>False</Beta>
   <Config Name="INFLUXDB_ADMIN_USER" Target="INFLUXDB_ADMIN_USER" Default="admin" Mode="" Description="Admin username" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="INFLUXDB_ADMIN_PASSWORD" Target="INFLUXDB_ADMIN_PASSWORD" Default="" Mode="" Description="Admin password" Type="Variable" Display="always" Required="true" Mask="true"/>

@@ -29,7 +29,7 @@
   <Version>0.1</Version>
   <WebUI>http://[IP]:[PORT:8081]</WebUI>
   <Banner></Banner>
-  <Icon>http://i.imgur.com/A8hATXW.png</Icon>
+  <Icon>https://i.imgur.com/A8hATXW.png</Icon>
   <Beta>False</Beta>
   <Category></Category>
   <ExtraParams></ExtraParams>

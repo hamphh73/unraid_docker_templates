@@ -29,7 +29,7 @@
   <Version>0.1</Version>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <Banner></Banner>
-  <Icon>http://i.imgur.com/iZhc5Ix.png</Icon>
+  <Icon>https://i.imgur.com/iZhc5Ix.png</Icon>
   <Beta>False</Beta>
   <Config Name="GF_SECURITY_ADMIN_PASSWORD" Target="GF_SECURITY_ADMIN_PASSWORD" Default="" Mode="" Description="Adminpassword" Type="Variable" Display="always" Required="true" Mask="true"/>
   <Config Name="GF_AUTH_ANONYMOUS_ENABLED" Target="GF_AUTH_ANONYMOUS_ENABLED" Default="true" Mode="" Description="Anonymous login" Type="Variable" Display="always" Required="false" Mask="false"/>
