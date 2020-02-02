@@ -20,6 +20,11 @@
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
+        <HostPort>143</HostPort>
+        <ContainerPort>143</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
         <HostPort>993</HostPort>
         <ContainerPort>993</ContainerPort>
         <Protocol>tcp</Protocol>
