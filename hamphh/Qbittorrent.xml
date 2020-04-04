@@ -51,4 +51,5 @@
   <ExtraParams></ExtraParams>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User: nobody" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group: users" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="WEBUI_PORT" Target="WEBUI_PORT" Default="8082" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
