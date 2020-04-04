@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>nzbget</Name>
+  <Overview></Overview>
+  <Description>
+  </Description>
+  <Support></Support>
+  <Registry></Registry>
+  <Repository>linuxserver/nzbget</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>6789</HostPort>
+        <ContainerPort>6789</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/nzbget/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Share/</HostDir>
+      <ContainerDir>/downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>0.1</Version>
+  <WebUI>http://[IP]:[PORT:8082]</WebUI>
+  <Banner></Banner>
+  <Icon>https://i.imgur.com/7FUTl3o.png</Icon>
+  <Beta>False</Beta>
+  <Category></Category>
+  <ExtraParams></ExtraParams>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User: nobody" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group: users" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
