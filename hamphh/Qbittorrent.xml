@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>Couchpotato</Name>
+  <Name>Qbittorrent</Name>
   <Overview></Overview>
   <Description>
   </Description>
   <Support></Support>
   <Registry></Registry>
-  <Repository>linuxserver/couchpotato</Repository>
+  <Repository>linuxserver/qbittorrent</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>
@@ -14,15 +14,25 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>5050</HostPort>
-        <ContainerPort>5050</ContainerPort>
+        <HostPort>6881</HostPort>
+        <ContainerPort>6881</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>6881</HostPort>
+        <ContainerPort>6881</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8082</HostPort>
+        <ContainerPort>8080</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/_dockerdata/couchpotato/config</HostDir>
+      <HostDir>/mnt/cache/_dockerdata/qbittorrent/</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -31,16 +41,11 @@
       <ContainerDir>/downloads</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-    <Volume>
-      <HostDir>/mnt/user/Share/</HostDir>
-      <ContainerDir>/movies</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
   </Data>
   <Version>0.1</Version>
-  <WebUI>http://[IP]:[PORT:5050]</WebUI>
+  <WebUI>http://[IP]:[PORT:8082]</WebUI>
   <Banner></Banner>
-  <Icon>https://i.imgur.com/Q1osqYb.png</Icon>
+  <Icon>https://i.imgur.com/vkPPL0n.png</Icon>
   <Beta>False</Beta>
   <Category></Category>
   <ExtraParams></ExtraParams>
