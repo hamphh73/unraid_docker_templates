@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Couchpotato</Name>
+  <Overview></Overview>
+  <Description>
+  </Description>
+  <Support></Support>
+  <Registry></Registry>
+  <Repository>linuxserver/couchpotato</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5050</HostPort>
+        <ContainerPort>5050</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/couchpotato/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Share/</HostDir>
+      <ContainerDir>/downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Share/</HostDir>
+      <ContainerDir>/movies</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>0.1</Version>
+  <WebUI>http://[IP]:[PORT:5050]</WebUI>
+  <Banner></Banner>
+  <Icon>https://i.imgur.com/Q1osqYb.png</Icon>
+  <Beta>False</Beta>
+  <Category></Category>
+  <ExtraParams>--device=/dev/dvb/</ExtraParams>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User: nobody" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group: users" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>

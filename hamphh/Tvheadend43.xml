@@ -30,11 +30,6 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/_dockerdata/epggrabber/</HostDir>
-      <ContainerDir>/epg</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
       <HostDir>/mnt/cache/_dockerdata/tvheadend43/</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
