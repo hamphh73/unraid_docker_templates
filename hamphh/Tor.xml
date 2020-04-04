@@ -5,7 +5,7 @@
   <Description>Tor on port 9050</Description>
   <Support></Support>
   <Registry></Registry>
-  <Repository>sachsenhofer/tor_proxy</Repository>
+  <Repository>hamphh/tor</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>
@@ -15,6 +15,11 @@
       <Port>
         <HostPort>9050</HostPort>
         <ContainerPort>9050</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9052</HostPort>
+        <ContainerPort>9052</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
