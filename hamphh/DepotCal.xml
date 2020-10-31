@@ -11,7 +11,7 @@
   <Environment/>
   <PostArgs>java -cp /data/depotcal-1.0.jar de.hampelhh.depotcal.DepotCal /data /logs/depotcal.txt</PostArgs>
   <Networking>
-    <Mode>host</Mode>
+    <Mode>bridge</Mode>
     <Publish>
       <Port>
         <HostPort>8088</HostPort>
