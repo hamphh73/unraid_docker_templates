@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>DepotCal</Name>
+  <Overview>DepotCal</Overview>
+  <Description>DepotCal</Description>
+  <Support></Support>
+  <Registry></Registry>
+  <Repository>openjdk:11</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <PostArgs>java -cp /data/depotcal-1.0.jar de.hampelhh.depotcal.DepotCal /data /logs/depotcal.txt</PostArgs>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8088</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/depotcal</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/_logs</HostDir>
+      <ContainerDir>/logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>0.1</Version>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>https://i.imgur.com/ntoityk.png</Icon>
+  <Beta>False</Beta>
+  <Category></Category>
+</Container>
