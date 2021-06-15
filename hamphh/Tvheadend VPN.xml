@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>Tvheadend 4.3</Name>
-  <Overview>Tvheadend Master-Branch passing throug 2 DVB Tuners.</Overview>
+  <Name>Tvheadend VPN</Name>
+  <Overview>Tvheadend VPN Bridge.</Overview>
   <Description>
 		[b]/config[/b] : This is where Tvheadend will store it\'s databases and configuration.[br][br]&#13;
 		[b]/recordings[/b] : This is where Tvheadend will store it\'s recordings. You will have to edit the path in the configuration tab to /recordings or else the volume mapping will not work.[br][br]&#13;
@@ -14,15 +14,15 @@
   <Privileged>false</Privileged>
   <Environment/>
   <Networking>
-    <Mode>bridge</Mode>
+    <Mode>none</Mode>
     <Publish>
       <Port>
-        <HostPort>9981</HostPort>
+        <HostPort>9983</HostPort>
         <ContainerPort>9981</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>9982</HostPort>
+        <HostPort>9984</HostPort>
         <ContainerPort>9982</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -30,28 +30,18 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/_dockerdata/tvheadend43/</HostDir>
+      <HostDir>/mnt/cache/_dockerdata/tvheadend_vpn/</HostDir>
       <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/TV-Aufzeichnungen/</HostDir>
-      <ContainerDir>/recordings</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/disks/tvtimeshift/</HostDir>
-      <ContainerDir>/timeshift</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Version>0.1</Version>
-  <WebUI>http://[IP]:[PORT:9981]/extjs.html?</WebUI>
+  <WebUI>http://[IP]:[PORT:9983]/extjs.html?</WebUI>
   <Banner></Banner>
   <Icon>https://i.imgur.com/BOM9PHj.png</Icon>
   <Beta>False</Beta>
   <Category>MediaServer:Video</Category>
-  <ExtraParams>--device=/dev/dvb/</ExtraParams>
+  <ExtraParams> --net=container:OVPN_Privoxy</ExtraParams>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User: nobody" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group: users" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>

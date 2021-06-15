@@ -9,9 +9,9 @@
   </Description>
   <Support></Support>
   <Registry></Registry>
-  <Repository>hamphh/tvheadend</Repository>
+  <Repository>linuxserver/tvheadend</Repository>
   <BindTime>true</BindTime>
-  <Privileged>true</Privileged>
+  <Privileged>false</Privileged>
   <Environment/>
   <Networking>
     <Mode>bridge</Mode>
@@ -57,4 +57,6 @@
   <Beta>False</Beta>
   <Category>MediaServer:Video</Category>
   <ExtraParams>--device=/dev/dvb/</ExtraParams>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User: nobody" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group: users" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
