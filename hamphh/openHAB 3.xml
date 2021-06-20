@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>openHAB 3</Name>
+  <Overview>openHAB 3</Overview>
+  <Description>openHAB on port 8080</Description>
+  <Support></Support>
+  <Registry></Registry>
+  <Repository>openhab/openhab:milestone</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5007</HostPort>
+        <ContainerPort>5007</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/openhab3/addons</HostDir>
+      <ContainerDir>/openhab/addons</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/openhab3/conf</HostDir>
+      <ContainerDir>/openhab/conf</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/_dockerdata/openhab3/userdata</HostDir>
+      <ContainerDir>/openhab/userdata</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/_logs/openhab3</HostDir>
+      <ContainerDir>/openhab/userdata/logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>0.1</Version>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>https://i.imgur.com/4YjuESp.png</Icon>
+  <Beta>False</Beta>
+  <Category>HomeAutomation:</Category>
+</Container>
