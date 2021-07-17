@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>CyberGhostVPN</Name>
+  <Overview>CyberGhostVPN</Overview>
+  <Description>
+	CyberGhostVPN
+  </Description>
+  <Support></Support>
+  <Registry></Registry>
+  <Repository>hamphh/cyberghostvpn</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+     
+    </Publish>
+  </Networking>
+  <Data>
+  </Data>
+  <Version>0.1</Version>
+  <Banner></Banner>
+  <Icon></Icon>
+  <Beta>False</Beta>
+  <Category></Category>
+  <ExtraParams>--cap-add=NET_ADMIN --dns=8.8.8.8</ExtraParams>
+</Container>
