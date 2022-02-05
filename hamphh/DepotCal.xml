@@ -5,7 +5,7 @@
   <Description>DepotCal</Description>
   <Support></Support>
   <Registry></Registry>
-  <Repository>openjdk:11</Repository>
+  <Repository>hamphh/depotcal</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>
@@ -38,4 +38,5 @@
   <Icon>https://i.imgur.com/ntoityk.png</Icon>
   <Beta>False</Beta>
   <Category></Category>
+  <ExtraParams>--ipc=host</ExtraParams>
 </Container>
