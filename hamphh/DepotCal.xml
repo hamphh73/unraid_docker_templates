@@ -38,5 +38,5 @@
   <Icon>https://i.imgur.com/ntoityk.png</Icon>
   <Beta>False</Beta>
   <Category></Category>
-  <ExtraParams>--ipc=host</ExtraParams>
+  <ExtraParams>--ipc=host --memory="6g"</ExtraParams>
 </Container>

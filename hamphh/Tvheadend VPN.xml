@@ -17,12 +17,12 @@
     <Mode>none</Mode>
     <Publish>
       <Port>
-        <HostPort>9983</HostPort>
+        <HostPort>9981</HostPort>
         <ContainerPort>9981</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>9984</HostPort>
+        <HostPort>9982</HostPort>
         <ContainerPort>9982</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -41,7 +41,7 @@
   <Icon>https://i.imgur.com/BOM9PHj.png</Icon>
   <Beta>False</Beta>
   <Category>MediaServer:Video</Category>
-  <ExtraParams> --net=container:OVPN_Privoxy</ExtraParams>
+  <ExtraParams> --net=container:VPN_Schweiz</ExtraParams>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User: nobody" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group: users" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>

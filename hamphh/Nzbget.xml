@@ -3,6 +3,7 @@
   <Name>nzbget</Name>
   <Overview></Overview>
   <Description>
+  Initial Login: login:nzbget, password:tegbzn6789
   </Description>
   <Support></Support>
   <Registry></Registry>
@@ -33,7 +34,7 @@
     </Volume>
   </Data>
   <Version>0.1</Version>
-  <WebUI>http://[IP]:[PORT:8082]</WebUI>
+  <WebUI>http://[IP]:[PORT:6789]</WebUI>
   <Banner></Banner>
   <Icon>https://i.imgur.com/7FUTl3o.png</Icon>
   <Beta>False</Beta>
