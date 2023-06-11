@@ -41,4 +41,5 @@
   <Banner></Banner>
   <Icon>https://i.imgur.com/ZIrtdbK.png</Icon>
   <Beta>False</Beta>
+  <ExtraParams>--ulimit nofile=65536:65536</ExtraParams>
 </Container>
