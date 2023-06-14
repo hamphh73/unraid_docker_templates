@@ -27,6 +27,6 @@
   <Beta>False</Beta>
   <Category>Tools:System</Category>
   <Config Name="AUTOHEAL_CONTAINER_LABEL" Target="AUTOHEAL_CONTAINER_LABEL" Default="all" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="AUTOHEAL_INTERVAL" Target="AUTOHEAL_INTERVAL" Default="30" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"/>
-  <Config Name="AUTOHEAL_DEFAULT_STOP_TIMEOUT" Target="AUTOHEAL_DEFAULT_STOP_TIMEOUT" Default="30" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="AUTOHEAL_INTERVAL" Target="AUTOHEAL_INTERVAL" Default="30" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="AUTOHEAL_DEFAULT_STOP_TIMEOUT" Target="AUTOHEAL_DEFAULT_STOP_TIMEOUT" Default="30" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
